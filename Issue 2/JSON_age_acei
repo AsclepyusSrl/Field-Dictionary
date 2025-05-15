@@ -1,0 +1,62 @@
+# JSON 1: Campo numerico continuo (age)
+{
+  "field_name": "age",
+  "data_type": "numerical_continuous",
+  "source_dataset_id": "mimiciv_3_1_derived_export_age_data.csv",
+  "sample_values_preview": [76, 18, 33, 68, 80, 52, 89, 74, 86, 79],
+  "count": 10,
+  "unique_count": 10,
+  "missing_count": 0,
+  "mean": 65.5,
+  "median": 75.0,
+  "std_dev": 23.47,
+  "variance": 551.03,
+  "quartile_1": 52.0,
+  "quartile_3": 86.0,
+  "percentile_5": 18.45,
+  "percentile_95": 88.55,
+  "skewness": -1.1861,
+  "kurtosis": -0.6561,
+  "histogram": {
+    "bins": [18.0, 26.2, 34.4, 42.6, 50.8, 59.0, 67.2, 75.4, 83.6, 91.8, 100.0],
+    "counts": [1, 1, 0, 0, 1, 1, 2, 2, 2, 0]
+  },
+  "distribution_fit": {
+    "type": "normal",
+    "parameters": {
+      "mean": 65.5,
+      "std_dev": 23.47
+    },
+    "fit_score": null
+  }
+}
+
+# JSON 2: Campo categorico (acei)
+{
+  "field_name": "acei",
+  "data_type": "categorical",
+  "source_dataset_id": "mimiciv_3_1_derived_export_acei_data.csv",
+  "sample_values_preview": [
+    "Captopril",
+    "Lisinopril",
+    "Captopril",
+    "Benazepril",
+    "Lisinopril",
+    "Benazepril",
+    "Captopril",
+    "Lisinopril",
+    "Captopril",
+    "Lisinopril"
+  ],
+  "count": 10,
+  "unique_count": 3,
+  "missing_count": 0,
+  "mode": "Captopril",
+  "mode_frequency": 4,
+  "category_frequencies": {
+    "Captopril": 4,
+    "Lisinopril": 4,
+    "Benazepril": 2
+  },
+  "entropy": 1.571
+}
